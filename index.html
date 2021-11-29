@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="wish.js"></script>
+    <title>Gacha Galaxy</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="row h-100">
+        <div id="display" class="col-8 h-100">
+          <div id="display-container"></div>
+        </div>
+        <div id="options" >
+          <div id="options-container">
+            <div class="roll">
+                <button
+                  type="button:focus "
+                  style="background-color: #291675;"
+                  onclick="javascript: doRolls();">
+                  <img src="assets/wish_btn.png">
+                </button>
+                <br>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="javascript: reset();">
+                  Reset
+                </button>
+              <div class="hidden">
+                Count (1-5):
+                <input type="number" value="5" id="count" />
+                <br>
+                <input type="number" id="charCount" placeholder="(optional)" />
+                <select id="characterSelect">
+                  <option value="none"></option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div id="history-container">
+            <div id="stats"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
