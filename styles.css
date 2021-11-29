@@ -21,10 +21,8 @@ html, body {
 #history-container {
   position: absolute;
   background-color: white;
-  margin-top: 18%;
+  margin-top: 40%;
   margin-left: 80%;
-  width:200px;
-  padding: 15px;
 }
 
 #display {
